@@ -78,14 +78,22 @@ body {
 }
 
 .grid > :nth-child(even) {
-    justify-self: start; /* Align even items to the left */
+    justify-self: start;
 }
 
 @media (max-width: 1024px) {
     .grid {
         grid-template-columns: 1fr;
         justify-content: center;
+        align-items: center;
         padding: 10px;
+    }
+    .grid > :nth-child(odd) {
+        justify-self: center;
+    }
+    
+    .grid > :nth-child(even) {
+        justify-self: center;
     }
     .header {
         font-size: 1.8em;
