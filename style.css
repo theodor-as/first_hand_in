@@ -12,23 +12,37 @@
     margin: 20px;
 }
 
-.photo{
-    height: 300px;
+.photo {
+    width: 280px;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
 body{
     background-color: #a3c0ea;
 }
 
-.textbox{
-    background-color: white;
-    margin: 0;
-    padding: 0;
+.textbox {
+    background-color: #d7d7d7;
+    padding: 25px;
+    width: 320px;
+    height: 450px;
+    overflow: auto;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    color: #333333;
+    line-height: 1.8;
+    font-size: 18px;
 }
 
 .grid {
     display: grid;
-    grid-template-columns:  1fr 1fr;
+    grid-template-columns: 1fr 1fr;
     align-items: center;
-    gap: 10px;
+    gap: 20px;
+    padding: 20px;
+    max-width: 1200px;
+    margin: 0;
 }
