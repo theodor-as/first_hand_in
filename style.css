@@ -63,10 +63,31 @@ body {
 
 .grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    grid-template-columns: repeat(2, 1fr);
     align-items: start;
+    justify-content: space-between;
+    align-items: center;
     gap: 20px;
     padding: 20px;
     max-width: 1200px;
     margin: 0 auto;
+}
+
+.grid > :nth-child(odd) {
+    justify-self: end;
+}
+
+.grid > :nth-child(even) {
+    justify-self: start; /* Align even items to the left */
+}
+
+@media (max-width: 1024px) {
+    .grid {
+        grid-template-columns: 1fr;
+        justify-content: center;
+        padding: 10px;
+    }
+    .header {
+        font-size: 1.8em;
+    }
 }
