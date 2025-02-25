@@ -48,7 +48,13 @@ body {
 
 .cover {
     height: 400px;
+    transition: transform 0.2s ease;
 }
+
+.cover:hover{
+    transform: scale(1.05);
+}
+
 .track {
     text-align: center;
 }
@@ -59,6 +65,12 @@ body {
     background-color:  #FF7e30;
     border-radius: 8px;
     max-width: 500px;
+    transition: transform 0.2s ease;
+    
+}
+
+.tracklist-section:hover {
+    transform: scale(1.05);
 }
 
 .track-flex{
@@ -91,10 +103,14 @@ body {
     border-radius: 8px;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
     transition: transform 0.2s ease;
+    transition: transform 0.2s ease;
     
     
 }
 
+.textbox:hover {
+    transform: scale(1.05);
+}
 .album-info {
     margin: 20px;
     display: flex;
