@@ -92,6 +92,7 @@ body {
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
     transition: transform 0.2s ease;
     
+    
 }
 
 .album-info {
@@ -105,13 +106,14 @@ body {
 
 
 .album-description {
-    margin: 20px;
+    margin: 20px auto;
     display: flex;
+    flex-direction: row;
     justify-content: center;
     align-items: center;
-    text-align: center;
     gap: 20px;
-    min-width: none;-width: 500px;
+    width: 100%;
+    max-width: 800px;
 }
 
 .youtube {
