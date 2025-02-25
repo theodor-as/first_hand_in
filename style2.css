@@ -59,15 +59,22 @@ body {
     background-color:  #FF7e30;
     border-radius: 8px;
     max-width: 500px;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.track-flex{
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .tracklist {
     text-align: center;
     list-style-type: none;
+    width: 500px;
     padding: 0;
     font-size: 1em;
     color: #333;
+
 }
 
 .tracklist li {
@@ -87,3 +94,28 @@ body {
     
 }
 
+.album-info {
+    margin: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    gap: 20px;
+}
+
+
+.album-description {
+    margin: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    gap: 20px;
+    min-width: none;-width: 500px;
+}
+
+.youtube {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
