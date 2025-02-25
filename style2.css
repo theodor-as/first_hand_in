@@ -84,8 +84,8 @@ body {
 .textbox {
     background-color: #d7d7d7;
     padding: 25px;
-    width: 100%;
-    max-width: 320px;
+    width: 500px;
+    height: 300px;
     height: auto;
     overflow: auto;
     border-radius: 8px;
@@ -120,4 +120,79 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
+}
+
+@media (max-width: 1024px) {
+    .track-flex {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .tracklist-section {
+        max-width: 100%;
+    }
+
+    .album-description {
+        flex-direction: column;
+        align-items: center;
+        max-width: 90%;
+    }
+
+    .textbox {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 500px;
+        height: 400px;
+        font-size: 20px;
+        line-height: 1.3;
+        padding: 15px;
+        line-height: 1.4;
+    }
+
+    .album-info {
+        flex-direction: column;
+    }
+
+    .header {
+        font-size: 1.8em;
+    }
+
+}
+
+@media (max-width: 768px) {
+    .navbar {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .navbar a {
+        margin: 5px 0;
+    }
+
+    .header {
+        font-size: 1.5em;
+    }
+
+    .cover {
+        max-width: 90%;
+    }
+
+    .tracklist {
+        width: 90%;
+    }
+
+    .textbox {
+        width: 400px;
+        height: 500px;
+        font-size: 20px;
+        line-height: 1.2;
+        padding: 10px;
+    }
+
+    /* .youtube iframe {
+        width: 90%;
+        height: 250px;
+    } */
+
 }
