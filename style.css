@@ -1,7 +1,7 @@
 .navbar {
     display: flex;
     justify-content: space-around;
-    background-color: #F5F5DC;
+    background-color: #719c64;
     padding: 10px 0;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
     font-size: 20px;
@@ -36,7 +36,7 @@
 }
 
 body {
-    background-color: #a3c0ea;
+    background-color: #b4b4b4;
     font-size: 18px;
     line-height: 1.8;
     color: #333333;
@@ -55,6 +55,20 @@ body {
     border-radius: 8px;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
     transition: transform 0.2s ease;
+    
+}
+
+.navbar a {
+    text-decoration: none;
+    color: #333333;
+    transition: background-color 0.3s ease, color 0.3s ease;
+
+}
+
+.navbar a:hover {
+    background-color: #d3d3b8;
+    color: #444444;
+    border-radius: 5px;
 }
 
 .textbox:hover {
