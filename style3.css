@@ -1,7 +1,7 @@
 .navbar {
     display: flex;
     justify-content: space-around;
-    background-color:#FFFDD0;
+    background-color: #FFFDD0;
     padding: 10px 0;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
     font-size: 20px;
@@ -62,7 +62,7 @@ body {
 .tracklist-section {
     margin: 20px;
     padding: 20px;
-    background-color:  #FF7e30;
+    background-color:  #9A5C41;
     border-radius: 8px;
     max-width: 500px;
     transition: transform 0.2s ease;
@@ -94,7 +94,7 @@ body {
 }
 
 .textbox {
-    background-color: #deab4c;
+    background-color:  #719c64;
     padding: 25px;
     width: 500px;
     height: 300px;
