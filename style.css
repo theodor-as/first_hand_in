@@ -7,6 +7,13 @@
     font-size: 20px;
     position: sticky;
     top: 0;
+    z-index: 1000;
+    transition: background-color 0.3s ease;
+}
+
+.navbar div:hover {
+    background-color: #d3d3b8;
+    cursor: pointer;
 }
 
 .header{
@@ -36,8 +43,9 @@ body {
 .textbox {
     background-color: #d7d7d7;
     padding: 25px;
-    width: 320px;
-    height: 450px;
+    width: 100%;
+    max-width: 320px;
+    height: auto;
     overflow: auto;
     border-radius: 8px;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1)
@@ -45,8 +53,8 @@ body {
 
 .grid {
     display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    align-items: center;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    align-items: start;
     gap: 20px;
     padding: 20px;
     max-width: 1200px;
